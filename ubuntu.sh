@@ -1,8 +1,7 @@
 #!/bin/sh
 
 apt update && apt upgrade -y  
-apt install -y xfce4 xfce4-goodies  
-apt install -y tightvncserver
+apt install -y xfce4 xfce4-goodies tightvncserver xrdp dbus-x11
 cat > .vnc/xstartup << EOF
 #!/bin/sh
 
