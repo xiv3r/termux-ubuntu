@@ -22,3 +22,16 @@ vncserver -kill :1
 ```
 vncserver
 ```
+
+### Login
+```
+pd sh ubuntu
+```
+### Logout 
+```
+exit
+```
+### Uninstall 
+```
+pd rm ubuntu
+```
