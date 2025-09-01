@@ -9,7 +9,7 @@ pkg update && pkg install -y wget && wget -qO- https://raw.githubusercontent.com
 ```
 - Step 2
 ```
-wget -qO- https://raw.githubusercontent.com/xiv3r/termux-ubuntu/refs/heads/main/ubuntu.sh | sh
+apt update && apt install -y wget && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-ubuntu/refs/heads/main/ubuntu.sh | sh
 ```
 
 # Configure VNC
