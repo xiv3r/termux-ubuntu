@@ -1,15 +1,12 @@
 #!/bin/bash
 
 pkg upgrade -y  
-pkg install proot-distro  
-proot-distro install ubuntu  
+pkg install -y proot-distro  
+proot-distro install ubuntu
 proot-distro login ubuntu
 apt update && apt upgrade -y  
-apt install xfce4 xfce4-goodies  
-apt install tightvncserver  
-vncserver  
-vncpasswd  
-
+apt install -y xfce4 xfce4-goodies  
+apt install -y tightvncserver
 cat > ~/.vnc/xstartup  << EOF
 #!/bin/sh
 
@@ -19,6 +16,3 @@ xrdb $HOME/.Xresources
 startxfce4 & 
 EOF
 chmod +x ~/.vnc/xstartup
-
-vncserver -kill :1  
-vncserver  
