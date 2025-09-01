@@ -7,7 +7,7 @@
 # Auto Install
 - Step 1
 ```
-pkg update && pkg install -y wget && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-ubuntu/refs/heads/main/install.sh | bash && pd sh ubuntu
+pkg update && pkg install -y wget && wget https://raw.githubusercontent.com/xiv3r/termux-ubuntu/refs/heads/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 - Step 2
 ```
