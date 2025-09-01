@@ -14,23 +14,18 @@ apt update && apt install -y wget && wget -qO- https://raw.githubusercontent.com
 
 # Configure VNC
 ```
-vncserver
-```
-```
 vncpasswd
 ```
 
 # Run VNC Server
 ```
-vncserver -kill :1
-```
-```
 vncserver
 ```
+- Open Real VNC and put the address `localhost:1` and your vnc password and connect.
 
 ### Login
 ```
-pd sh ubuntu
+ubuntu
 ```
 ### Logout 
 ```
@@ -38,5 +33,5 @@ exit
 ```
 ### Uninstall 
 ```
-pd rm ubuntu
+uninstall-ubuntu
 ```
