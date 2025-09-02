@@ -6,8 +6,9 @@ apt install -y xfce4 xfce4-goodies tightvncserver xrdp dbus-x11 neofetch
 
 # VNC startup 
 cat >> .bashrc << EOF
-vncserver
+rm -rf /tmp/.X*
 neofetch
+vncserver
 EOF
 
 cat > .vnc/xstartup << EOF
