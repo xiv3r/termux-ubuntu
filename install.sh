@@ -11,7 +11,7 @@ EOF
 chmod +x $PREFIX/bin/ubuntu
 
 # Uninstaller 
-cat > $PREFIX/bin/uninstall-ubuntu
+cat > $PREFIX/bin/uninstall-ubuntu << EOF
 #!/bin/sh
 proot-distro remove ubuntu
 EOF
