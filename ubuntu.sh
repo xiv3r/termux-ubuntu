@@ -11,6 +11,7 @@ neofetch
 vncserver
 EOF
 
+mkdir -p ~/.vnc
 cat > ~/.vnc/xstartup << EOF
 #!/bin/sh
 
