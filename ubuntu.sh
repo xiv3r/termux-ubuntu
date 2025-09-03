@@ -11,7 +11,7 @@ neofetch
 vncserver
 EOF
 
-cat > .vnc/xstartup << EOF
+cat > ~/.vnc/xstartup << EOF
 #!/bin/sh
 
 unset SESSION_MANAGER  
@@ -19,4 +19,4 @@ unset DBUS_SESSION_BUS_ADDRESS
 xrdb $HOME/.Xresources  
 startxfce4 &
 EOF
-chmod +x .vnc/xstartup
+chmod +x ~/.vnc/xstartup
