@@ -10,6 +10,12 @@ proot-distro login ubuntu
 EOF
 chmod +x $PREFIX/bin/ubuntu
 
+# Manual Login
+cat > $PREFIX/bin/ubuntu << EOF
+pd sh ubuntu
+EOF
+chmod +x $PREFIX/bin/ubuntu
+
 # Uninstaller 
 cat > $PREFIX/bin/uninstall-ubuntu << EOF
 #!/bin/sh
