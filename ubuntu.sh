@@ -1,6 +1,5 @@
 #!/bin/sh
 
-apt update
 apt upgrade -y  
 apt install -y xfce4 xfce4-goodies tightvncserver xrdp dbus-x11 neofetch
 
