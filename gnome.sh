@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install dependencies 
-apt install -y gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server
+apt install -y neofetch gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server
 
 # Vnv startup
 mkdir -p .vnc
