@@ -17,7 +17,7 @@ EOF
 chmod +x .vnc/xstartup
 
 # Startup
-cat >> .bashrc << EOF
 sed -i '/neofetch/d' .bashrc
+cat >> .bashrc << EOF
 neofetch
 EOF
