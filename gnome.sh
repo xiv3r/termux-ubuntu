@@ -20,4 +20,4 @@ neofetch
 EOF
 
 # Install dependencies 
-apt install -y neofetch gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server
+apt install -y neofetch gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server gnome-shell-extensions yaru-theme-gtk yaru-theme-icon
