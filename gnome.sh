@@ -8,8 +8,6 @@ cat > .vnc/xstartup << EOF
 export XDG_CURRENT_DESKTOP="GNOME"
 service dbus start 
 gnome-shell --x11
-for file in $(find /usr -type f -iname "login1"); do rm -rf $file 
-done
 EOF
 chmod +x .vnc/xstartup
 
@@ -17,7 +15,11 @@ chmod +x .vnc/xstartup
 sed -i '/neofetch/d' .bashrc
 cat >> .bashrc << EOF
 neofetch
+vncserver 
 EOF
+
+# for file in $(find /usr -type f -iname "login1"); do rm -rf $file 
+# done
 
 # Install dependencies 
 apt install -y neofetch gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server gnome-shell-extensions yaru-theme-gtk yaru-theme-icon
