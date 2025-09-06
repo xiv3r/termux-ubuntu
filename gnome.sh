@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install dependencies 
-apt install -y neofetch gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server
-
 # Vnv startup
 mkdir -p .vnc
 cat > .vnc/xstartup << EOF
@@ -21,3 +18,6 @@ sed -i '/neofetch/d' .bashrc
 cat >> .bashrc << EOF
 neofetch
 EOF
+
+# Install dependencies 
+apt install -y neofetch gnome-shell gnome-terminal gnome-tweaks gnome-shell-extensions gnome-shell-extension-ubuntu-dock nautilus nano gedit dbus-x11 tigervnc-standalone-server
