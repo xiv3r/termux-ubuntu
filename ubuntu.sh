@@ -1,8 +1,5 @@
 #!/bin/sh
 
-apt upgrade -y  
-apt install -y xfce4 xfce4-goodies tightvncserver xrdp dbus-x11 neofetch
-
 # auto startup 
 sed -i '/rm -rf /tmp/.X*/d' .bashrc
 sed -i '/neofetch/d' .bashrc
@@ -24,3 +21,7 @@ xrdb $HOME/.Xresources
 startxfce4 &
 EOF
 chmod +x .vnc/xstartup
+
+# Dependencies
+apt upgrade -y  
+apt install -y xfce4 xfce4-goodies tightvncserver xrdp dbus-x11 neofetch
